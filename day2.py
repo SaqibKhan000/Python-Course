@@ -2,7 +2,7 @@
 # Variables in Python
 a = 1
 print(a)
-
+ 
 name = 'M Saqib Kha'
 print(name) 
 
