@@ -23,3 +23,42 @@ else:
 
 
 # IF ELIF ELSE STATEMENT IN PYTHON:   
+marks = int(input("Enter your marks: "))
+if marks >= 90:
+    print("Grade A+")
+elif marks >= 80:
+    print("Grade A")
+elif marks >= 70:
+    print("Grade B")
+else:
+    print("Grade C")
+
+
+
+
+
+
+
+# NESTED IF-ELSE STATEMENT:
+number = int(input("Enter any number: "))
+if number > 0:
+    if(number % 2 == 0):
+        print("Number is Even")
+    else:
+        print("Number is Odd")
+else:
+    if(number == 0):
+        print("Number is Zero")
+    else:
+        print("Number is negative")
+
+
+
+
+
+
+
+# CONDITIONAL EXPRESSIONS OR TERNARY OPERATOR:
+value = 11
+result = 'Even Number' if(value % 2 == 0) else 'Odd Number'
+print(result)
