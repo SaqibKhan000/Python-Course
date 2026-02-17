@@ -38,8 +38,16 @@ print(f"My name is {name2} and I'm {age2}")
 #   STRING OPERATORS:
 a = 'one'
 b = 'two'
+
 print(a + b) # Strings will concate
 
 print(a * 4) # * 4 will create 4 coppies
 
 print(r"Hello /n World") # r/R (Raw String): It will print the exact string. It will suppresses the escape characters.
+
+
+# [] slice 
+# [:] rande slice
+# % string formating
+# in: membership operator
+# not in:  membership operator
