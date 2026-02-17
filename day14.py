@@ -28,3 +28,18 @@ print("My name is {name1} and I'm {age1}".format(name1 = 'Saqib', age1 = 19))
 name2 = "Ahmad"
 age2 = 22
 print(f"My name is {name2} and I'm {age2}")
+
+
+
+
+
+
+
+#   STRING OPERATORS:
+a = 'one'
+b = 'two'
+print(a + b) # Strings will concate
+
+print(a * 4) # * 4 will create 4 coppies
+
+print(r"Hello /n World") # r/R (Raw String): It will print the exact string. It will suppresses the escape characters.
