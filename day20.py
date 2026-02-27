@@ -129,3 +129,85 @@ list19 = list18.copy() # it's a shallow copy
 list19.sort()
 print(list18) # [30, 10, 50, 20, 40]
 print(list19) # [10, 20, 30, 40, 50]
+
+
+
+#---------------------------------------
+
+
+
+
+# Joining Lists By Several Methods:
+list20 = [1, 2]
+list21 = ['a', 'b']
+# 1) By concatination:
+final_list = list20 + list21
+print(final_list)
+
+# 2) By append() method:
+for item in list21:
+    list20.append(item)
+print(list20)
+
+# 3) By extend() method:
+list20.extend(list21)
+print(list20)
+
+
+# --------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+# List Comprehensions:
+# It provides ka shortcut way to create a list.
+# SYNTAX:
+# list =  [expression   for item in iterable  if condition]
+
+list22 = [num for num in range(5)] # If condition is optional
+print(list22) # [0, 1, 2, 3, 4]
+
+list23 = [num for num in range(1, 11) if num % 2 == 0]
+print(list23) # [2, 4, 6, 8, 10]
+
+list24 = ['apple', 'banana', 'cherry']
+list25 = [item.upper() for item in list24]
+print(list25) # ['APPLE', 'BANANA', 'CHERRY']
+
+list26 = [[1, 2], [3, 4], [5, 6]]
+def flatten_list(list):
+    return [item for item in list for item in item]
+print(flatten_list([[1, 2], [3, 4], [5, 6]])) # [1, 2, 3, 4, 5, 6]
+
+
+
+
+
+#----------------------------------------
+
+
+
+
+
+
+# Iterating Over List:
+
+list27 = ['apple', 'banana', 'cherry']
+for item in list27:
+    print(item, end="😊")
+
+
+# By While Loop
+index = 0
+while index < len(list27):
+    print(list27[index])
+    index += 1
