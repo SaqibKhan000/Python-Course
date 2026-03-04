@@ -54,3 +54,36 @@ print(dict5)
 #------------------------------------------------------
 
 # Dictionary Iterations
+dict6 = {
+    "name": "M Saqib Khan",
+    "address": "Peshawar",
+    "age": 18
+}
+# Getting Keys
+for key in dict6.keys():
+    print(key)
+
+# Getting Values
+for value in dict6.values(): 
+    print(value)
+
+# Getting both Keys & Values
+for item in dict6.items():
+    print(item)
+
+#------------------------------------------------------------
+
+# Nested Dictionary
+dict7 = {
+    'student1': {"name": "Ali", "Grade": 10},
+    'student2': {"name": "Numan", "Grade": 9},
+    'student3': {"name": "Kumar", "Grade": 8},
+}
+print(dict7)
+print(dict7["student1"]["Grade"]) # 10
+
+#------------------------------------------------------------
+
+# Dictionary Comprehension
+dict8 = {x*x for x in range(1, 11)} # Here if condition is optional which will use at the end of the dictionary
+print(dict8)
