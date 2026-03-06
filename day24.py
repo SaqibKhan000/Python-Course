@@ -61,3 +61,40 @@ print(remove_dup(fruits))
 
 # Using set constructor             
 print(list(set(fruits)))
+
+#------------------------------------------------------------------
+
+# Q5 Find the index of an element in a tuple
+my_tuple = (1, 10, 2, 3, 4)
+def find_index(tup, elem):
+     return tup.index(elem) if elem in tup else -1
+print(find_index(my_tuple, 100))
+
+#------------------------------------------------------------------
+
+# Q6 Find the Most Frequent Value in a dictionary
+data = {'a': 2, 'b': 2, 'c': 1, 'd': 3, 'e': 2} 
+def most_freq(dict):
+     freq = {}
+     for value in dict.values():
+          if  value not in freq:
+               freq[value] = 0
+          freq[value] += 1
+     max_value = max(freq, key = freq.get)
+     return max_value
+print(most_freq(data)) # 2
+
+#------------------------------------------------------------
+
+# Q7 Merge Dictionaries with Summation 
+dict1 = {'a': 10, 'b': 20, 'c': 30}
+dict2 = {'b': 15, 'c': 35, 'd': 25} 
+def merge_dict(dict1, dict2):
+     result = dict1.copy()
+     for key, value in dict2.items():
+          if key in result:
+               result[key] += value
+          else: 
+               result[key] = value
+     return result
+print(merge_dict(dict1, dict2)) # {'a': 10, 'b': 35, 'c': 65, 'd': 25}
