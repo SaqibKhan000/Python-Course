@@ -98,3 +98,18 @@ def merge_dict(dict1, dict2):
                result[key] = value
      return result
 print(merge_dict(dict1, dict2)) # {'a': 10, 'b': 35, 'c': 65, 'd': 25}
+
+#-------------------------------------------------------------
+
+# Q8 Flatten a Nested Dictionary 
+data = {'a': {'b': {'c': 42}, 'd': 7}, 'e': 10}
+def flatten_dict(data, parent_key='', sep='.'):
+     items = {}
+     for key, value in data.items():
+          new_key = f"{parent_key}{sep}{key}" if parent_key else key
+          if isinstance(value, dict): 
+               items.update(flatten_dict(value, new_key, sep))
+          else:
+               items[new_key] = value
+     return items
+print(flatten_dict(data)) # {'a.b.c': 42, 'a.d': 7, 'e': 10}
